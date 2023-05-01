@@ -1,0 +1,29 @@
+.container {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+mat-card {
+  background-color: cornflowerblue;
+  margin: 5px;
+}
+
+.btn {
+  background-color: grey;
+}
+
+.example-form-field {
+  width: 300px;
+}
+
+.form {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.input {
+  margin-right: 2rem;
+}

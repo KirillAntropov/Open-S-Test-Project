@@ -1,0 +1,8 @@
+<div class="container">
+  <mat-card *ngFor="let prod of filteredData$ |async">
+    <mat-card-header>
+      <mat-card-title>Name: {{prod.name}}</mat-card-title>
+      <mat-card-subtitle>Price: {{prod.price}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>
