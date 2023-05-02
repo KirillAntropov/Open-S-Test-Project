@@ -1,11 +1,4 @@
-<div class="form">
-  <p class="input">
-    <mat-form-field appearance="fill">
-      <mat-label>search</mat-label>
-      <input matInput type="text" [(ngModel)]="name" placeholder=" ...">
-    </mat-form-field>
-  </p>
-</div>
+<app-form></app-form>
 <div *ngIf="products$ as products" class="container">
   <mat-card *ngFor="let prod of products$ | async">
     <mat-card-header>

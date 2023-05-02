@@ -19,10 +19,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ProductsEffects } from './store/products/products.effects';
 import { reducers } from './store';
+import { FormComponent } from './components/form/form.component';
+
 
 
 
@@ -37,6 +40,7 @@ import { reducers } from './store';
     HeaderComponent,
     BasketComponent,
     CategoryComponent,
+    FormComponent,
     FilterPipe,
   ],
   imports: [
@@ -49,6 +53,7 @@ import { reducers } from './store';
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
+    MatSelectModule,
     MatInputModule,
     FormsModule,
     StoreModule.forRoot(reducers),
